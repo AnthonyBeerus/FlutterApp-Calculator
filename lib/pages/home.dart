@@ -80,51 +80,22 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               Divider(color: Colors.red),
-              Container(
-                padding: EdgeInsets.all(20),
-                alignment: Alignment.topCenter,
-
+              Expanded(
+                child: Container(
+                  padding: EdgeInsets.all(20),
+                  child: GridView.builder(
+                    itemCount: buttonList.length,
+                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 4,
+                      crossAxisSpacing: 12,
+                      mainAxisSpacing: 12,
+                    ),
+                    itemBuilder: (BuildContext context, int index) {
+                      return _buildCalculatorButton(buttonList[index]);
+                    },
+                  ),
+                ),
               ),  
-              Row(
-                children: [
-                  _buildCalculatorButton("AC"),
-                  _buildCalculatorButton("("),
-                  _buildCalculatorButton(")"),
-                  _buildCalculatorButton("/")
-                ],
-              ),
-              Row(
-                children: [
-                  _buildCalculatorButton("7"),
-                  _buildCalculatorButton("8"),
-                  _buildCalculatorButton("9"),
-                  _buildCalculatorButton("*"),
-                ],
-              ),
-              Row(
-                children: [
-                  _buildCalculatorButton("4"),
-                  _buildCalculatorButton("5"),
-                  _buildCalculatorButton("6"),
-                  _buildCalculatorButton("+"),
-                ],
-              ),
-              Row(
-                children: [
-                  _buildCalculatorButton("1"),
-                  _buildCalculatorButton("2"),
-                  _buildCalculatorButton("3"),
-                  _buildCalculatorButton("-"),
-                ],
-              ),
-              Row(
-                children: [
-                  _buildCalculatorButton("C"),
-                  _buildCalculatorButton("0"),
-                  _buildCalculatorButton("."),
-                  _buildCalculatorButton("="),
-                ],
-              ),
             ],
           ),
         )
