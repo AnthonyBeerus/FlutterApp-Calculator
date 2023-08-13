@@ -79,10 +79,10 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ),
-              Divider(color: Colors.black),
+              Divider(color: Colors.red),
               Container(
                 padding: EdgeInsets.all(20),
-                alignment: Alignment.centerRight,
+                alignment: Alignment.topCenter,
 
               ),  
               Row(
