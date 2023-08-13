@@ -63,7 +63,7 @@ class _HomePageState extends State<HomePage> {
                   userInput,
                   style: TextStyle(
                     fontSize: 30,
-                    color: Colors.black,
+                    color: Colors.white,
                   ),
                 ),
               ),
@@ -75,7 +75,7 @@ class _HomePageState extends State<HomePage> {
                   result,
                   style: TextStyle(
                     fontSize: 59,
-                    color: Colors.black,
+                    color: Colors.white,
                   ),
                 ),
               ),

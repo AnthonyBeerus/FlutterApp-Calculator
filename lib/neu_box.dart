@@ -10,7 +10,7 @@ class NeuBox extends StatelessWidget {
       padding: const EdgeInsets.all(2),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
-        color: Colors.grey.shade300,
+        color: Colors.grey.shade900,
         boxShadow: [
           //bottom right corner is darker
           BoxShadow(
@@ -34,6 +34,10 @@ class NeuBox extends StatelessWidget {
             Color(0xFF1d2630),
             Color(0xFF1d2630),
           ],
+          stops: [
+            0.1,
+            0.9,
+          ]
         ),
       ),
       child: Center(child: child),
