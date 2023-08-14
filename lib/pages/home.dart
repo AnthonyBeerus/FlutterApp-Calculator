@@ -54,7 +54,7 @@ class _HomePageState extends State<HomePage> {
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            colors:[Color(0xFFFBA5370), Color(0xFFFF4E2D8)],
+            colors:[Color(0xFFFEACDA3), Color(0xFFFD6AE7B)],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
           )
