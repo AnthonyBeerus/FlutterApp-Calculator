@@ -98,8 +98,9 @@ class _HomePageState extends State<HomePage> {
                 ),
                 Expanded(
                   child: Container(
-                    padding: EdgeInsets.all(20),
+                    padding: EdgeInsets.all(30),
                     child: GridView.builder(
+                      physics: NeverScrollableScrollPhysics(),
                       itemCount: buttonList.length,
                       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 4,
