@@ -67,7 +67,7 @@ class _HomePageState extends State<HomePage> {
               children: [
                 //userInput display section
                 Container(
-                  padding: EdgeInsets.all(20),
+                  padding: EdgeInsets.all(10),
                   alignment: Alignment.centerRight,
                   child: Text(
                     userInput,
@@ -79,7 +79,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 //Result Display section
                 Container(
-                  padding: EdgeInsets.all(20),
+                  padding: EdgeInsets.all(10),
                   alignment: Alignment.centerRight,
                   child: Text(
                     result,
@@ -89,16 +89,16 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                 ),
-                Container(
-                  child: NeuBox(
-                    child: Divider(
-                      color: Colors.black,  
-                      ),
-                    ),
-                ),
+                // Container(
+                //   child: NeuBox(
+                //     child: Divider(
+                //       color: Colors.black,  
+                //       ),
+                //     ),
+                // ),
                 Expanded(
                   child: Container(
-                    padding: EdgeInsets.all(30),
+                    padding: EdgeInsets.all(3),
                     child: GridView.builder(
                       physics: NeverScrollableScrollPhysics(),
                       itemCount: buttonList.length,
