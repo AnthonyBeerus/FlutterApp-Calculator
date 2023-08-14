@@ -52,7 +52,7 @@ class _HomePageState extends State<HomePage> {
 
        
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors:[Color(0xFFFEACDA3), Color(0xFFFD6AE7B)],
             begin: Alignment.topCenter,
@@ -67,11 +67,11 @@ class _HomePageState extends State<HomePage> {
               children: [
                 //userInput display section
                 Container(
-                  padding: EdgeInsets.all(10),
+                  padding: const EdgeInsets.all(10),
                   alignment: Alignment.centerRight,
                   child: Text(
                     userInput,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 30,
                       color: Colors.white,
                     ),
@@ -79,24 +79,24 @@ class _HomePageState extends State<HomePage> {
                 ),
                 //Result Display section
                 Container(
-                  padding: EdgeInsets.all(10),
+                  padding: const EdgeInsets.all(10),
                   alignment: Alignment.centerRight,
                   child: Text(
                     result,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 59,
                       color: Colors.black,
                     ),
                   ),
                 ),
-                Divider(
+                const Divider(
                   color: Colors.black,  
                 ),
                 Expanded(
                   child: Container(
-                    padding: EdgeInsets.all(3),
+                    padding: const EdgeInsets.all(3),
                     child: GridView.builder(
-                      physics: NeverScrollableScrollPhysics(),
+                      physics: const NeverScrollableScrollPhysics(),
                       itemCount: buttonList.length,
                       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 4,

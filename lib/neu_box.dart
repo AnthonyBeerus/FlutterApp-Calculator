@@ -6,32 +6,34 @@ class NeuBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final double screenWidth = MediaQuery.of(context).size.width;
+
     return Container(
-      padding: const EdgeInsets.all(2),
+      padding: EdgeInsets.all(screenWidth * 0.02),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(15),
+        borderRadius: BorderRadius.circular(screenWidth * 0.06),
         color: Colors.grey.shade900,
         boxShadow: [
           //bottom right corner is darker
           BoxShadow(
-            color: Color(0XFFFD6AE7B),
-            blurRadius: 30,
-            offset: const Offset(2, 2),
+            color: const Color(0XFFFD6AE7B),
+            blurRadius: screenWidth * 0.04,
+            offset: const Offset(4, 4),
             spreadRadius: 1,
           ),
           //top left corner is lighter
-          const BoxShadow(
-            color: Color(0xFFFD6AE7B),
-            blurRadius: 30,
-            offset: Offset(-2, -2),
+          BoxShadow(
+            color: const Color(0xFFFD6AE7B),
+            blurRadius: screenWidth * 0.04,
+            offset: const Offset(-4, -4),
             spreadRadius: 1,
           ),
         ],
-        gradient: LinearGradient(
+        gradient: const LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            Color(0xFFFEACDA3),
+            Color(0xfffeacda3),
             Color(0xFFFD6AE7B),
           ],
           stops: [
