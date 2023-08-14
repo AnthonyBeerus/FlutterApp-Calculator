@@ -66,7 +66,7 @@ class _HomePageState extends State<HomePage> {
               children: [
                 //userInput display section
                 Container(
-                  padding: EdgeInsets.all(screenWidth * 0.01),
+                  padding: EdgeInsets.all(screenWidth * 0.15),
                   alignment: Alignment.centerRight,
                   child: Text(
                     userInput,
@@ -78,7 +78,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 //Result Display section
                 Container(
-                  padding: const EdgeInsets.all(10),
+                  padding: EdgeInsets.all(screenWidth * 0.15),
                   alignment: Alignment.centerRight,
                   child: Text(
                     result,
