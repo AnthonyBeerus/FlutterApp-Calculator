@@ -47,10 +47,9 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
-      backgroundColor: Colors.transparent,
 
-       
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
@@ -61,13 +60,13 @@ class _HomePageState extends State<HomePage> {
         ),
         child: SafeArea(
           child: Padding(
-            padding: const EdgeInsets.all(30.0),
+            padding: EdgeInsets.all(screenWidth * 0.05),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 //userInput display section
                 Container(
-                  padding: const EdgeInsets.all(10),
+                  padding: EdgeInsets.all(screenWidth * 0.01),
                   alignment: Alignment.centerRight,
                   child: Text(
                     userInput,
