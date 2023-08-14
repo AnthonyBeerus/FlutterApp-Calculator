@@ -15,14 +15,14 @@ class NeuBox extends StatelessWidget {
           //bottom right corner is darker
           BoxShadow(
             color: Color(0XFFFD6AE7B),
-            blurRadius: 15,
-            offset: const Offset(3, 3),
+            blurRadius: 30,
+            offset: const Offset(2, 2),
             spreadRadius: 1,
           ),
           //top left corner is lighter
           const BoxShadow(
             color: Color(0xFFFD6AE7B),
-            blurRadius: 15,
+            blurRadius: 30,
             offset: Offset(-2, -2),
             spreadRadius: 1,
           ),
