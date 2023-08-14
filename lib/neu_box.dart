@@ -37,7 +37,7 @@ class NeuBox extends StatelessWidget {
           stops: [
             0.1,
             0.9,
-          ]
+          ],
         ),
       ),
       child: Center(child: child),

@@ -48,63 +48,74 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF1d2630), 
-      body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(20.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              //userInput display section
-              Container(
-                padding: EdgeInsets.all(20),
-                alignment: Alignment.centerRight,
-                child: Text(
-                  userInput,
-                  style: TextStyle(
-                    fontSize: 30,
-                    color: Colors.white,
-                  ),
-                ),
-              ),
-              //Result Display section
-              Container(
-                padding: EdgeInsets.all(20),
-                alignment: Alignment.centerRight,
-                child: Text(
-                  result,
-                  style: TextStyle(
-                    fontSize: 59,
-                    color: Colors.white,
-                  ),
-                ),
-              ),
-              Container(
-                child: NeuBox(
-                  child: Divider(
-                    color: Colors.white,  
-                    ),
-                  ),
-                ),
-              Expanded(
-                child: Container(
+      backgroundColor: Colors.transparent,
+
+       
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors:[Color(0xFFFBA5370), Color(0xFFFF4E2D8)],
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+          )
+        ),
+        child: SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                //userInput display section
+                Container(
                   padding: EdgeInsets.all(20),
-                  child: GridView.builder(
-                    itemCount: buttonList.length,
-                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 4,
-                      crossAxisSpacing: 12,
-                      mainAxisSpacing: 12,
+                  alignment: Alignment.centerRight,
+                  child: Text(
+                    userInput,
+                    style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.white,
                     ),
-                    itemBuilder: (BuildContext context, int index) {
-                      return _buildCalculatorButton(buttonList[index]);
-                    },
                   ),
                 ),
-              ),  
-            ],
-          ),
-        )
+                //Result Display section
+                Container(
+                  padding: EdgeInsets.all(20),
+                  alignment: Alignment.centerRight,
+                  child: Text(
+                    result,
+                    style: TextStyle(
+                      fontSize: 59,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+                Container(
+                  child: NeuBox(
+                    child: Divider(
+                      color: Colors.white,  
+                      ),
+                    ),
+                  ),
+                Expanded(
+                  child: Container(
+                    padding: EdgeInsets.all(20),
+                    child: GridView.builder(
+                      itemCount: buttonList.length,
+                      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 4,
+                        crossAxisSpacing: 12,
+                        mainAxisSpacing: 12,
+                      ),
+                      itemBuilder: (BuildContext context, int index) {
+                        return _buildCalculatorButton(buttonList[index]);
+                      },
+                    ),
+                  ),
+                ),  
+              ],
+            ),
+          )
+        ),
       )
     );
   }
