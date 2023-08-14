@@ -61,7 +61,7 @@ class _HomePageState extends State<HomePage> {
         ),
         child: SafeArea(
           child: Padding(
-            padding: const EdgeInsets.all(20.0),
+            padding: const EdgeInsets.all(30.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
@@ -85,17 +85,17 @@ class _HomePageState extends State<HomePage> {
                     result,
                     style: TextStyle(
                       fontSize: 59,
-                      color: Colors.white,
+                      color: Colors.black,
                     ),
                   ),
                 ),
                 Container(
                   child: NeuBox(
                     child: Divider(
-                      color: Colors.white,  
+                      color: Colors.black,  
                       ),
                     ),
-                  ),
+                ),
                 Expanded(
                   child: Container(
                     padding: EdgeInsets.all(20),

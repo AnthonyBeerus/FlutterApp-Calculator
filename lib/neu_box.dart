@@ -14,16 +14,16 @@ class NeuBox extends StatelessWidget {
         boxShadow: [
           //bottom right corner is darker
           BoxShadow(
-            color: Color(0XFFF060610),
+            color: Color(0XFFFD6AE7B),
             blurRadius: 15,
             offset: const Offset(3, 3),
             spreadRadius: 1,
           ),
           //top left corner is lighter
           const BoxShadow(
-            color: Color(0xFFF3D4650),
+            color: Color(0xFFFD6AE7B),
             blurRadius: 15,
-            offset: Offset(-4, -4),
+            offset: Offset(-2, -2),
             spreadRadius: 1,
           ),
         ],
@@ -31,8 +31,8 @@ class NeuBox extends StatelessWidget {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            Color(0xFF1d2630),
-            Color(0xFF1d2630),
+            Color(0xFFFEACDA3),
+            Color(0xFFFD6AE7B),
           ],
           stops: [
             0.1,
