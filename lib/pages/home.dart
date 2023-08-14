@@ -89,13 +89,9 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                 ),
-                // Container(
-                //   child: NeuBox(
-                //     child: Divider(
-                //       color: Colors.black,  
-                //       ),
-                //     ),
-                // ),
+                Divider(
+                  color: Colors.black,  
+                ),
                 Expanded(
                   child: Container(
                     padding: EdgeInsets.all(3),
